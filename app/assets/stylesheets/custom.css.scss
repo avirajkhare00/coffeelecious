@@ -1,0 +1,28 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.welcome_header{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    font-family: 'Roboto', sans-serif;
+    color:#3A3A3A;
+    
+}
+.welcome_content{
+    text-align:center;
+    font-family: ‘Metrophobic’, Arial, serif;
+    font-size:22px;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.top_10_picks_header{
+    text-align:center;
+    font-size:24px;
+    font-weight:none;
+    font-family: 'Roboto', sans-serif;
+    color:#909090;
+}
