@@ -1,0 +1,15 @@
+<center><h2><%= @recipe.name %></h2>
+<%= gravtar_for @recipe.user, size: 150, class: "gravatar_at_userid"  %><br />
+<small>Written By:<%= @recipe.user.firstName+ " "+@recipe.user.lastName %></small>
+</center>
+<%= link_to "Edit your recipe", edit_recipe_path(@recipe) %>
+<p>
+    <h3>Summary:</h3>
+    <%= @recipe.summary %>
+</p>
+<p>
+    <h3>Directions:</h3>
+    <%= simple_format(@recipe.directions) %>
+</p>
+
+<%= link_to 'back to index page', '/recipes' %>

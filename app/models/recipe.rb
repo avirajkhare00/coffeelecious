@@ -4,4 +4,5 @@ class Recipe < ActiveRecord::Base
   validates :name, presence: true, length: {minimum: 3, maximum: 20}
   validates :summary, presence: true, length: {minimum: 30, maximum: 250}
   validates :directions, presence: true, length: {minimum: 50, maximum: 350}
+  mount_uploader :picture, PictureUploader
 end

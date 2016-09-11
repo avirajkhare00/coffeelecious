@@ -1,0 +1,15 @@
+<%= render 'shared/errors', obj: @recipe %>
+
+
+    <%= form_for @recipe do |f| %> 
+<%= f.label :name %> 
+<%= f.text_field :name %> 
+ <br />
+<%= f.label :summary %> 
+<%= f.text_field :summary %> 
+ <br />
+<%= f.label :directions %> 
+<%=f.text_area :directions %> 
+ <br />
+<%= f.submit(@recipe.new_record? ? 'create recipe' : 'edit recipe', class: "btn btn-success") %> 
+<% end %>
